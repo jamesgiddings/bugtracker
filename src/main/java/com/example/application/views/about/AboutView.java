@@ -22,6 +22,7 @@ public class AboutView extends VerticalLayout {
         add(img);
 
         add(new H2("This place intentionally left empty"));
+        add(new H2("But I've added this text as a test."));
         add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
 
         setSizeFull();
