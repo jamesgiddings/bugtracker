@@ -28,7 +28,7 @@ public class SamplePersonService {
 
     public void delete(UUID id) {
         repository.deleteById(id);
-    }
+    } 
 
     public Page<SamplePerson> list(Pageable pageable) {
         return repository.findAll(pageable);
