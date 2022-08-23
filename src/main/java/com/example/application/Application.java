@@ -8,6 +8,7 @@ import com.vaadin.flow.theme.lumo.Lumo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
@@ -17,7 +18,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * and some desktop browsers.
  *
  */
-@SpringBootApplication
+@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @Theme(value = "bugtracker", variant = Lumo.DARK)
 @PWA(name = "BugTracker", shortName = "BugTracker", offlineResources = {})
 @NpmPackage(value = "line-awesome", version = "1.3.0")
