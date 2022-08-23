@@ -182,9 +182,14 @@
                     <execution>
                         <goals>
                             <goal>prepare-frontend</goal>
+                            <goal>build-frontend</goal>
                         </goals>
+                        <phase>compile</phase>
                     </execution>
                 </executions>
+            <configuration>
+                            <productionMode>true</productionMode>
+                        </configuration>
             </plugin>
         </plugins>
     </build>
