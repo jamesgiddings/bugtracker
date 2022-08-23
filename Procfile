@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/bugtracker-1.0-SNAPSHOT.jar
+web: java $JAVA_OPTS -jar target/*.war
